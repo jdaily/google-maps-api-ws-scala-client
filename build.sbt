@@ -2,7 +2,7 @@ organization := "com.github.maxpsq"
 
 name := "google-maps-api-ws-scala-client"
 
-version := "0.2-SNAPSHOT"
+version := "0.3-SNAPSHOT"
 
 scalaVersion := "2.11.2"
 
@@ -11,8 +11,8 @@ crossScalaVersions := Seq("2.10.4", "2.11.2")
 resolvers += "Typesafe repository" at "http://repo.typesafe.com/typesafe/releases/"
 
 libraryDependencies ++= Seq(
-    "com.typesafe.play" %% "play-json" % "2.3.5",
-    "net.databinder.dispatch" %% "dispatch-core" % "0.11.2",
+    "com.typesafe.play" %% "play-json" % "2.4.2",
+    "com.typesafe.play" %% "play-ws" % "2.4.2",
     "org.specs2" %% "specs2" % "2.3.13" % "test"
 )
 
@@ -20,7 +20,7 @@ libraryDependencies ++= Seq(
 moduleName := "maxpsq-gmapsclient"
 
 /* Sonatype repo credential for publishing (publish-signed) */
-credentials += Credentials(Path.userHome / ".sbt" / ".sonatype_credentials.sbt") 
+credentials += Credentials(Path.userHome / ".sbt" / ".sonatype_credentials.sbt")
 
 publishMavenStyle := true
 
