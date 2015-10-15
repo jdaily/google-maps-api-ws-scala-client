@@ -7,32 +7,32 @@ abstract class Parameter(key: String, value: Any) {
   override def toString: String =  "%s=%s".format(key, value)
 }
 
-abstract class ClientParameter(key: String, value: Any) extends Parameter(key, value) 
+abstract class ClientParameter(key: String, value: Any) extends Parameter(key, value)
 
 
 object GoogleParameters {
 
-  // Google API Key  
-  case class ApiKeyParam (value: String) extends ClientParameter("apikey", value) {
-    override def isValid: Boolean = true 
-  }  
-  
-  
+  // Google API Key
+  case class ApiKeyParam (value: String) extends ClientParameter("key", value) {
+    override def isValid: Boolean = true
+  }
+
+
   // Language
   case class LanguageParam(value: String) extends ClientParameter("language", value) {
-    override def isValid: Boolean = value.length() == 2 
+    override def isValid: Boolean = value.length() == 2
   }
-  
+
   object DefaultLang {
     def apply(): LanguageParam = LanguageParam("en")
   }
 
-  
+
   // Sensor
   case class SensorParam(value: Boolean) extends ClientParameter("sensor", value) {
-    override def isValid: Boolean = true 
+    override def isValid: Boolean = true
   }
-  
+
   object NoSensor {
     def apply(): SensorParam = SensorParam(false)
   }

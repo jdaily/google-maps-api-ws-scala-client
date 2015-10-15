@@ -23,7 +23,7 @@ target/
 ######################
 
 # Windows image file caches
-Thumbs.db 
+Thumbs.db
 
 # Folder config file
 Desktop.ini
@@ -41,6 +41,12 @@ Desktop.ini
 # Files that might appear on external disk
 .Spotlight-V100
 .Trashes
+
+######################
+# IntelliJ
+######################
+
+.idea/*
 
 
 ######################
