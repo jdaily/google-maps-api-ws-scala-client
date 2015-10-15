@@ -2,11 +2,11 @@ organization := "com.github.maxpsq"
 
 name := "google-maps-api-ws-scala-client"
 
-version := "0.2-SNAPSHOT"
+version := "0.3-SNAPSHOT"
 
-scalaVersion := "2.11.2"
+scalaVersion := "2.11.7"
 
-crossScalaVersions := Seq("2.10.4", "2.11.2")
+crossScalaVersions := Seq("2.10.4", "2.11.7")
 
 resolvers += "Typesafe repository" at "http://repo.typesafe.com/typesafe/releases/"
 
